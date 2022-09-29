@@ -1,0 +1,32 @@
+on early-boot
+    mount none /mnt/hmd_custom_amx/lost+found /mnt/hmd_custom_amx/600WW bind rec
+    mount none /mnt/hmd_custom_amx/lost+found /mnt/hmd_custom_amx/600EEA bind rec
+    mount none /mnt/hmd_custom_amx/lost+found /mnt/hmd_custom_amx/600CLA bind rec
+    mount none /mnt/hmd_custom_amx/lost+found /mnt/hmd_custom_amx/600ID bind rec
+    mount none /mnt/hmd_custom_amx/lost+found /mnt/hmd_custom_amx/600TEL bind rec
+    mount none /mnt/hmd_custom_amx/lost+found /mnt/hmd_custom_amx/600RU bind rec
+    mount none /mnt/hmd_custom_amx/lost+found /mnt/hmd_custom_amx/600FD bind rec
+    mount none /mnt/hmd_custom_amx/lost+found /mnt/hmd_custom_amx/600IN bind rec
+    umount /mnt/hmd_custom_amx/${ro.boot.skuid}
+    mount none /mnt/hmd_custom_amx/${ro.boot.skuid}/media /mnt/hmd_custom_amx/media bind rec
+    mount none /mnt/hmd_custom_amx/${ro.boot.skuid}/etc /mnt/hmd_custom_amx/hmd_custom/etc bind rec
+    mount none /mnt/hmd_custom_amx/${ro.boot.skuid}/app /mnt/hmd_custom_amx/hmd_custom/app bind rec
+    mount none /mnt/hmd_custom_amx/${ro.boot.skuid}/priv-app /mnt/hmd_custom_amx/hmd_custom/priv-app bind rec
+    mount none /mnt/hmd_custom_amx/${ro.boot.skuid}/overlay /mnt/hmd_custom_amx/hmd_custom/overlay bind rec
+    mount none /mnt/hmd_custom_amx/${ro.boot.skuid}/custometc /mnt/hmd_custom_amx/custometc bind rec
+
+    mount none /product/lost+found /product/600WW bind rec
+    mount none /product/lost+found /product/600EEA bind rec
+    mount none /product/lost+found /product/600CLA bind rec
+    mount none /product/lost+found /product/600ID bind rec
+    mount none /product/lost+found /product/600TEL bind rec
+    mount none /product/lost+found /product/600RU bind rec
+    mount none /product/lost+found /product/600FD bind rec
+    mount none /product/lost+found /product/600IN bind rec
+    umount /product/${ro.boot.skuid}
+    mount none /product/${ro.boot.skuid}/media /product/media bind rec
+    mount none /product/${ro.boot.skuid}/etc /product/hmd_custom/etc bind rec
+    mount none /product/${ro.boot.skuid}/app /product/hmd_custom/app bind rec
+    mount none /product/${ro.boot.skuid}/priv-app /product/hmd_custom/priv-app bind rec
+    mount none /product/${ro.boot.skuid}/overlay /product/hmd_custom/overlay bind rec
+    mount none /product/${ro.boot.skuid}/custometc /product/custometc bind rec
